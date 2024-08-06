@@ -6,7 +6,7 @@ def test_doLogin(setup):
     b = 4
     assert a + 1 == b, "Test failed\n"
 
-def test_testingUserReq(before):
+def test_testingUserReq(setup, before, after):
     print("\nTesting User Registration\n")
     a = 3
     b = 4

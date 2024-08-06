@@ -2,12 +2,18 @@ import pytest
 
 @pytest.fixture
 def setup():
-    print("\nSetup before test EXTERNAL FIXTURE\n")
+    print("\n Setup Start \n")
     yield
-    print("\nTear down after test")
+    print("\n Setup Finish \n")
 
 @pytest.fixture
 def before():
-    print("\nBefore test EXTERNAL FIXTURE \n")
+    print("\n Before Start \n")
     yield
-    print("\nAfter test")
+    print("\n Before Finish \n")
+
+@pytest.fixture
+def after():
+    print("\n After Start \n")
+    yield
+    print("\n After Finish \n")
